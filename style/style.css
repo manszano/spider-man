@@ -640,13 +640,13 @@ p {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 56px 15px;
   overflow: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .container {
     flex-direction: column;
     height: auto;
@@ -661,7 +661,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .item-1 {
     align-items: center;
   }
@@ -683,11 +683,11 @@ p {
 }
 
 .spiderman {
-  width: 140%;
+  width: 130%;
   overflow: none;
   transform: translate3d(-190px, 0, 0);
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .spiderman {
     transform: translate3d(0, 0, 0);
     width: 100%;
@@ -838,10 +838,11 @@ header {
 }
 
 .nav-list {
+  margin-left: 32px;
   list-style: none;
   display: flex;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .nav-list {
     display: none;
   }
@@ -853,7 +854,7 @@ header {
   color: #FA3C41;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .logo {
     display: none;
   }
@@ -870,7 +871,7 @@ header {
 
 .nav-link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Mukta", sans-serif;
@@ -901,22 +902,23 @@ header {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1126px) {
   .nav-social {
     display: none;
   }
 }
 .nav-social svg {
   cursor: pointer;
-  margin-left: 16px;
-  width: 18px;
+  margin-left: 20px;
+  width: 28px;
+  overflow: visible;
 }
 .nav-social svg path, .nav-social svg circle {
   transition: 0.4s ease;
 }
 .nav-social svg:hover path, .nav-social svg:hover circle {
   fill: #FA3C41;
-  transform: translate3d(0, 2px, 0);
+  transform: translate3d(0, -3px, 0);
 }
 
 .burger {
@@ -925,12 +927,6 @@ header {
   width: 50px;
   height: 50px;
 }
-@media screen and (max-width: 960px) {
-  .burger {
-    display: block;
-  }
-}
-
 .logo-spiderman {
   fill: transparent;
   -webkit-animation: logo-spiderman 12s ease infinite alternate;
