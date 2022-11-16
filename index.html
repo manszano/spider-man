@@ -23,17 +23,24 @@
                     <li><a href="" class="nav-link">Home</a></li>
                     <li><a href="" class="nav-link">Story</a></li>
                     <li><a href="" class="nav-link">Wallpapers</a></li>
-                    <li><a href="" class="nav-link">#BeYourself</a></li>
+                    <li><a href="" class="nav-link be"> <em>#BeYourself </em> </a></li>
                 </ul>
             </div>
             <div class="nav-social">
                 <img src="svg/ig.svg" onload="SVGInject(this)"/>
                 <img src="svg/yt.svg" onload="SVGInject(this)"/>
                 <img src="svg/tt.svg" onload="SVGInject(this)"/>
+            </div>
+            <div class="burger">
 
             </div>
         </nav>
     </header>
+    <section class="bgvideo">
+        <video src="video/spiderman2.mp4"class="video" autoplay muted loop>
+            
+        </video>
+    </section>
     <!--============ CONTAINER ============-->
     <section class="container">
         <div class="item-1">
@@ -57,8 +64,25 @@
             </div>
         </div>
         <div class="item-2">
+            <div class="js-tilt">
             <img src="img/spider.png" onload="SVGInject(this)" class="spiderman"/> 
+            </div>
         </div>
     </section>
+    <!--======================= JS =======================-->
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        
+    <script>
+        $('.js-tilt').tilt({
+            perspective: 2000,
+            scale: 1.05,
+            glare: true,
+            maxGlare: .5,
+            reset: false
+        });
+    </script>
 </body>
 </html>
