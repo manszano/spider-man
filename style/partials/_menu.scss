@@ -22,6 +22,7 @@ header{
 }
 
 .nav-list{
+    margin-left: 32px;
     list-style: none;
     @include responsive(){
     display: none;
@@ -57,7 +58,7 @@ header{
 .nav-link{
     display: inline-block;
 
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Mukta', sans-serif;
@@ -97,9 +98,9 @@ header{
         }
     svg{
         cursor: pointer;
-        margin-left: 16px;
-        width: 18px;
-        
+        margin-left: 20px;
+        width: 28px;
+        overflow: visible;
         path,circle{
             transition: 0.4s ease;
         }
@@ -107,7 +108,7 @@ header{
         &:hover{
             path,circle{
                 fill: $red-light;
-                transform: translate3d(0,2px,0);
+                transform: translate3d(0,-3px,0);
             }
         }
     }
@@ -118,7 +119,7 @@ header{
     width: 50px;
     height: 50px;
     @include responsive(){
-        display: block;
+        //display: block;
         }
 }
 
