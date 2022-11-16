@@ -35,6 +35,9 @@ header{
     }
 }
 .logo{
+    @include responsive(){
+        display: none;
+    }
     &:hover{
         cursor: pointer;
     }
