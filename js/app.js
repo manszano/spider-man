@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {y: 0, opacity: 1, ease: Expo.easeInOut}, '-=0.5')
 
     .fromTo('.spider-main', 0.7 ,
-    {y: 100, opacity: 0},
+    {y: -50, opacity: 0},
     {y: 0, opacity: 1, ease: Expo.easeInOut})
     
 })
