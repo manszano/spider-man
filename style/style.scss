@@ -3,17 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
-    
 }
 @mixin responsive(){
     @media screen and (max-width: 960px){
         @content;
-    }
+    }   
 }
 @import 'partials/colors';
-@import 'partials/layout';
-@import 'partials/menu';
-@import 'partials/animations';
 @import 'partials/spacing';
 body{
     width: 100%;
@@ -32,8 +28,11 @@ a{
     border: 1px solid red($color: #000000);
 }
 p{
+    font-size: 14px;
     color: $gray-3;
-    font-size: 16px;
-    line-height: 1px;
+    letter-spacing: 1px;
     line-height: 140%;
 }
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/animations';
