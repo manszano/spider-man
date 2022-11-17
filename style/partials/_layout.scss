@@ -2,7 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 56px 15px;
-    overflow: none;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,13 +34,13 @@
         transition: 0.4s ease;
         &:hover{
             cursor: pointer;
-            transform: scale(1.05);
+            transform: scale(1.15);
         }
     }
 }
 .spiderman{
-    width: 130%;
-    overflow: none;
+    width: 125%;
+    
     transform: translate3d(-190px,0,0);
     @include responsive(){
         transform: translate3d(0,0,0);
@@ -96,7 +96,7 @@
 
     }
     &:hover{
-        transform: skew(-10deg) scale(1.05);
+        transform: skew(-10deg) scale(1.10);
         &::before{
             opacity: 1;
         }
@@ -129,7 +129,7 @@
 
     }
     &:hover{
-        transform: skew(-10deg) scale(1.05);
+        transform: skew(-10deg) scale(1.10);
         &::after{
             
             width: 101%;
