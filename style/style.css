@@ -641,7 +641,7 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   padding: 56px 15px;
-  overflow: none;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -679,12 +679,11 @@ p {
 }
 .brands svg:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .spiderman {
-  width: 130%;
-  overflow: none;
+  width: 125%;
   transform: translate3d(-190px, 0, 0);
 }
 @media screen and (max-width: 1126px) {
@@ -737,7 +736,7 @@ p {
   border-right: 3px solid #EBEEF2;
 }
 .btn:hover {
-  transform: skew(-10deg) scale(1.05);
+  transform: skew(-10deg) scale(1.1);
 }
 .btn:hover::before {
   opacity: 1;
@@ -769,7 +768,7 @@ p {
   transition: 0.4s ease;
 }
 .btn-secondary:hover {
-  transform: skew(-10deg) scale(1.05);
+  transform: skew(-10deg) scale(1.1);
 }
 .btn-secondary:hover::after {
   width: 101%;
