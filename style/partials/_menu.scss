@@ -41,14 +41,13 @@ header{
     }
     &:hover{
         cursor: pointer;
+        
     }
-    svg{
-        path{
-            transition: 0.4s ease;
-        }
+    img{
         &:hover{
+        transition: 0.4s ease;
             path{
-                fill: $gray-1 ;
+                fill: $gray-1;
             }
         }
 
@@ -93,25 +92,20 @@ header{
 .nav-social{
     display: flex;
     align-items: center;
-    @include responsive(){
-        display: none;
-        }
-    svg{
+    img{
         cursor: pointer;
         margin-left: 20px;
         width: 28px;
         overflow: visible;
-        path,circle{
             transition: 0.4s ease;
-        }
 
         &:hover{
-            path,circle{
-                fill: $red-light;
                 transform: translate3d(0,-3px,0);
-            }
         }
     }
+    @include responsive(){
+        display: none;
+        }
 }
 .burger{
     display: none;
