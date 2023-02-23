@@ -669,15 +669,15 @@ p {
 
 .brands {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 105px;
   justify-content: space-between;
 }
-.brands svg {
+.brands img {
+  margin-left: 12px;
   transition: 0.4s ease;
 }
-.brands svg:hover {
+.brands img:hover {
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -810,10 +810,6 @@ p {
   background: linear-gradient(79.42deg, #8A0503 0%, #DE0E12 100%);
 }
 
-.brands {
-  margin-left: -20px;
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -861,10 +857,10 @@ header {
 .logo:hover {
   cursor: pointer;
 }
-.logo svg path {
+.logo img:hover {
   transition: 0.4s ease;
 }
-.logo svg:hover path {
+.logo img:hover path {
   fill: #B5B6B8;
 }
 
@@ -901,23 +897,20 @@ header {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1126px) {
-  .nav-social {
-    display: none;
-  }
-}
-.nav-social svg {
+.nav-social img {
   cursor: pointer;
   margin-left: 20px;
   width: 28px;
   overflow: visible;
-}
-.nav-social svg path, .nav-social svg circle {
   transition: 0.4s ease;
 }
-.nav-social svg:hover path, .nav-social svg:hover circle {
-  fill: #FA3C41;
+.nav-social img:hover {
   transform: translate3d(0, -3px, 0);
+}
+@media screen and (max-width: 1126px) {
+  .nav-social {
+    display: none;
+  }
 }
 
 .burger {
@@ -928,25 +921,7 @@ header {
 }
 .logo-spiderman {
   fill: transparent;
-  -webkit-animation: logo-spiderman 12s ease infinite alternate;
-          animation: logo-spiderman 12s ease infinite alternate;
-}
-
-@-webkit-keyframes logo-spiderman {
-  0% {
-    stroke-width: 0;
-    stroke-dasharray: 1 100;
-    fill: transparent;
-  }
-  25% {
-    stroke-width: 0.3;
-    stroke-dasharray: 100 0;
-    fill: transparent;
-  }
-  60%, 100% {
-    stroke-width: 0;
-    fill: #DCE1E8;
-  }
+  animation: logo-spiderman 12s ease infinite alternate;
 }
 
 @keyframes logo-spiderman {
