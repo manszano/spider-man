@@ -640,7 +640,7 @@ p {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 56px 15px;
+  padding: 560px 15px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
