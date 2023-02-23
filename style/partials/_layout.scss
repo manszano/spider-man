@@ -26,11 +26,11 @@
 }
 .brands{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 105px;
     justify-content: space-between;
-    svg{
+    img{
+        margin-left: 12px;
         transition: 0.4s ease;
         &:hover{
             cursor: pointer;
@@ -173,6 +173,4 @@
     align-items: center;
     background: linear-gradient(79.42deg, #8A0503 0%, #DE0E12 100%);
 }
-.brands{
-    margin-left: -20px;
-}
+
